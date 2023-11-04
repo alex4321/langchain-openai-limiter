@@ -99,3 +99,12 @@ query = embedder_model_key_choose.embed_query("What is Markdown?")
 > `-0.01  0.03 -0.00 -0.00  0.00 ...`
 > `-0.02  0.00 -0.01 -0.00 -0.00 ...`
 > `-0.01  0.01  0.00 -0.01  0.00 ...`
+
+## Testing
+
+To run tests - you can do the following stuff
+
+```
+pip install langchain_openai_limiter[dev]
+pytest
+```
