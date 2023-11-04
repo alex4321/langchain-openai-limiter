@@ -3,7 +3,7 @@ import os
 
 
 NAME = "langchain_openai_limiter"
-VERSION = "0.0.2.1"
+VERSION = "0.0.2.2"
 DESCRIPTION = """Wrapper for Langchain & OpenAI api calls which use OpenAI headers to deal with TPM & RPM.
 Also allow to use multiple keys from different organizations."""
 AUTHOR = "Alexander Pozharskii"

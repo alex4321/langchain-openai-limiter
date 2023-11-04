@@ -138,7 +138,7 @@ async def await_for_limit(model_name: ModelName, api_key: ApiKey, token_count: i
         run = await _aget_and_decrease_limit(model_name, api_key, token_count)
         if run:
             return
-        asyncio.sleep(limit_await_sleep)
+        await asyncio.sleep(limit_await_sleep)
     raise TimeoutError()
 
 def choose_key(model_name: ModelName, api_keys: List[ApiKey], token_count: int) -> ApiKey:
