@@ -2,7 +2,7 @@ from setuptools import setup
 
 
 NAME = "langchain_openai_limiter"
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 DESCRIPTION = """Wrapper for Langchain & OpenAI api calls which use OpenAI headers to deal with TPM & RPM.
 Also allow to use multiple keys from different organizations."""
 AUTHOR = "Alexander Pozharskii"
@@ -21,6 +21,7 @@ DEV_REQUIRES = [
     "pytest-asyncio>=0.21.1",
     "numpy>=1.26.1"
 ]
+URL = "https://github.com/alex4321/langchain-openai-limiter"
 
 
 setup(
@@ -31,6 +32,7 @@ setup(
     author_email=AUTHOR_EMAIL,
     packages=PACKAGES,
     install_requires=INSTALL_REQUIRES,
+    url=URL,
     extras_require={
         "dev": DEV_REQUIRES,
     }
