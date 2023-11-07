@@ -40,6 +40,10 @@ class LimitAwaitOpenAIEmbeddings(Embeddings):
         self.openai_embeddings.openai_api_key = key
 
     @property
+    def model(self):
+        return self.openai_embeddings.model
+
+    @property
     def model(self) -> str:
         return self.openai_embeddings.model
     

@@ -42,6 +42,10 @@ class ChooseKeyChatOpenAI(BaseChatModel):
         return self._chat_model._llm_type
         # pylint: enable=protected-access
 
+    @property
+    def model_name(self) -> str:
+        return self._chat_model.model_name
+
     def get_num_tokens(self, text: str) -> int:
         """
         Calculates number of tokens

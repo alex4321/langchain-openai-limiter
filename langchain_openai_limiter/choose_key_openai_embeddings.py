@@ -27,6 +27,10 @@ class ChooseKeyOpenAIEmbeddings(Embeddings):
         self.openai_api_keys = openai_api_keys
         self.limit_await_timeout = limit_await_timeout
         self.limit_await_sleep = limit_await_sleep
+    
+    @property
+    def model(self) -> str:
+        return self.openai_embeddings.model
 
     def get_num_tokens(self, texts: List[str]) -> int:
         """

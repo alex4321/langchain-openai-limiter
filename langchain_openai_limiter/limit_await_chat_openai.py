@@ -25,6 +25,10 @@ class LimitAwaitChatOpenAI(BaseChatModel):
     openai_api_key: str = ""
 
     @property
+    def model_name(self) -> str:
+        return self.chat_openai.model_name
+
+    @property
     def _llm_type(self) -> str:
         """Return type of chat model."""
         # pylint: disable=protected-access
