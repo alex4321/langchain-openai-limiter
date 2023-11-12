@@ -3,7 +3,7 @@ import os
 
 
 NAME = "langchain_openai_limiter"
-VERSION = "0.0.2.4"
+VERSION = "0.0.2.5"
 DESCRIPTION = """Wrapper for Langchain & OpenAI api calls which use OpenAI headers to deal with TPM & RPM.
 Also allow to use multiple keys from different organizations."""
 AUTHOR = "Alexander Pozharskii"
@@ -11,7 +11,7 @@ AUTHOR_EMAIL = "gaussmake@gmail.com"
 PACKAGES = [NAME]
 INSTALL_REQUIRES = [
     "aiohttp>=3.8.6",
-    "openai>=1.2.3",
+    "openai<=0.28.1",
     "requests>=2.31.0",
     "langchain>=0.0.329",
     "tiktoken>=0.5.1",
