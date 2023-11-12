@@ -11,11 +11,10 @@ AUTHOR_EMAIL = "gaussmake@gmail.com"
 PACKAGES = [NAME]
 INSTALL_REQUIRES = [
     "aiohttp>=3.8.6",
-    "openai>=0.28.1",
+    "openai>=1.2.3",
     "requests>=2.31.0",
     "langchain>=0.0.329",
     "tiktoken>=0.5.1",
-    "transformers>=4.35.0",
 ]
 DEV_REQUIRES = [
     "pytest>=7.4.1",
