@@ -42,10 +42,6 @@ class LimitAwaitOpenAIEmbeddings(Embeddings):
     @property
     def model(self):
         return self.openai_embeddings.model
-
-    @property
-    def model(self) -> str:
-        return self.openai_embeddings.model
     
     @model.setter
     def model(self, value: str) -> None:
